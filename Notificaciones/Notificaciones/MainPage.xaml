@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Notificaciones"
+             x:Class="Notificaciones.MainPage">
+
+    <StackLayout>
+        <Label Text="Medicamento:"/>
+        <Entry x:Name="_entryMed"
+               Placeholder="Ingrese el nombre del medicamento" />
+        <Label Text="¿Cada cuánto debe tomarse?"/>
+        <Entry x:Name="_entryLapso" Placeholder="Ingrese solo un número"/>
+        <Label Text="¿Cuántas veces deberá tomarse?"/>
+        <Entry x:Name="_entryInter" Placeholder="Ingrese sólo un número"/>
+        <Label Text="Asigne una fecha"/>
+        <DatePicker x:Name="_datePicker"/>
+        <Label Text="Asigne un horario" />
+        <TimePicker x:Name="_timePicker"/>
+        <Button x:Name="btnNotification" Text="Agregar Notificacion" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Clicked="BtnNotification_Clicked"/>
+        <Label x:Name="detail1"/>
+        <Label x:Name="detail2"/>
+    </StackLayout>
+
+</ContentPage>
